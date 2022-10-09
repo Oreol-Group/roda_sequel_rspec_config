@@ -1,0 +1,6 @@
+db:
+  pool: 10
+  timeout: 10000
+  shared_buffers: 512MB
+pagination:
+  page_size: 20

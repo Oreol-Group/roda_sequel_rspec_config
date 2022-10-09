@@ -1,0 +1,40 @@
+require:
+  - rubocop-rspec
+
+RSpec/FilePath:
+  Exclude:
+    - spec/routes/**/*
+
+RSpec/ExampleLength:
+  Max: 10
+
+Layout/ArrayAlignment:
+  Exclude:
+    - db/seeds.rb
+
+Layout/FirstArrayElementIndentation:
+  Exclude:
+    - db/seeds.rb
+
+AllCops:
+  Exclude:
+    - bin/**/*
+    - db/schema.rb
+    - db/migrate/*.rb
+  SuggestExtensions: false
+
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+Layout/LineLength:
+  Exclude:
+    - .env.rb
+
+Metrics/BlockLength:
+  Exclude:
+    - Rakefile
+    - app/routes/**/*

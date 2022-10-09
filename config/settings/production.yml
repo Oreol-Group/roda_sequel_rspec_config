@@ -1,0 +1,2 @@
+db:
+  max_connections: 100
