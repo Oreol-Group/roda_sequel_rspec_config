@@ -86,10 +86,13 @@ seeds = lambda do |env|
   rescue LoadError
     # do nothing
   end
+  require 'i18n'
   require 'config'
   require_relative 'config/initializers/config'
   require_relative 'config/initializers/db'
   require_relative 'config/initializers/models'
+  require_relative 'config/application_loader.rb'
+  require_relative 'config/initializers/i18n'
   require 'logger'
   require_relative 'db/seeds'
 end
