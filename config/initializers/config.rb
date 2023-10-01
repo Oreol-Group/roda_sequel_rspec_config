@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'pathname'
+
 # https://github.com/rubyconfig/config
 Config.setup do |config|
   config.use_env = true
